@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 392719750
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: panel/demo.pak
+      Dependencies: {}
+    Info_1:
+      Name: panel/loginpanel.pak
+      Dependencies: {}
+    Info_2:
+      Name: panel/mainpanel.pak
+      Dependencies: {}
+    Info_3:
+      Name: panel/tips.pak
+      Dependencies: {}
