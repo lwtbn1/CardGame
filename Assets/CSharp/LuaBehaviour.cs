@@ -20,15 +20,15 @@ public class LuaBehaviour : MonoBehaviour
     {
         Util.CallMethod(name, "Start");
     }
-    //protected void Update()
-    //{
-    //    Util.CallMethod(name, "Update");
-    //}
-    //protected void LateUpdate()
-    //{
-    //    Util.CallMethod(name, "LateUpdate");
-    //}
-    
+    protected void Update()
+    {
+        Util.CallMethod(name, "Update");
+    }
+    protected void LateUpdate()
+    {
+        Util.CallMethod(name, "LateUpdate");
+    }
+
     protected void OnDisable()
     {
         Util.CallMethod(name, "OnDisable", gameObject);

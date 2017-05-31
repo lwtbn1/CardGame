@@ -78,25 +78,45 @@ function MainCtrl.InitInfos()
     local textLen = UIUtil.TextLen(info,this.panel.ui.infoText);
     infoTextStartX = infosRectLen + 10;
     infoTextMinX = -textLen-20;
-    infosMoveCoroutine = coroutine.start(MainCtrl.InfosMove);
+    LuaHelper.AddUpdateEvent(MainCtrl.StartInfosMove, this);
 end
-local infosMoveCoroutine;
+local infosMoveCoroutine = nil;
+local roundFin = true;
+local round = 0;
 function MainCtrl.InfosMove()
+    if round > 0 then
+        coroutine.wait(2);
+    end
+    round = round + 1;
+    
     local startX = infoTextStartX;
     this.panel.ui.infoText.transform.localPosition = Vector3.New(startX,0,0);
     local moveDelta = 0;
     while startX > infoTextMinX do
-        moveDelta = 40 * Time.deltaTime;
+        moveDelta = 80 * Time.deltaTime;
         startX = startX - moveDelta;
         this.panel.ui.infoText.transform.localPosition = Vector3.New(startX,0,0);
         coroutine.step();
     end
+    roundFin = true;
 end
-function MainCtrl.Update()
-    --print("MainCtrl.Update  ......");
+function MainCtrl.StartInfosMove()
+    if roundFin then
+        if infosMoveCoroutine then
+            coroutine.stop(infosMoveCoroutine);
+        end
+        roundFin = false;
+        infosMoveCoroutine = coroutine.start(MainCtrl.InfosMove);
+    end
 end
 
+
 function MainCtrl.OnDisable()
-    --print("MainCtrl.OnDisable...");
+    print("MainCtrl.OnDisable...");
+    LuaHelper.RemoveUpdateEvent(MainCtrl.StartInfosMove, this);
+    if infosMoveCoroutine then
+        coroutine.stop(infosMoveCoroutine);
+        infosMoveCoroutine = nil;
+    end
 end
 --endregion

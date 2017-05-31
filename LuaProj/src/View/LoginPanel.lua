@@ -23,6 +23,14 @@ function LoginPanel.Start(obj)
 
 
 end
+
+function LoginPanel.Update(obj)
+
+end
+function LoginPanel.LateUpdate(obj)
+
+end
+
 function LoginPanel.OnDisable(obj)
     --print("mainPanel OnDisable ......");
 end

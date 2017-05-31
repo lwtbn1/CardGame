@@ -44,5 +44,11 @@ function MainPanel.OnDestroy(obj)
     --print("mainPanel OnDisable ......");
 end
 
+function MainPanel.Update(obj)
+
+end
+function MainPanel.LateUpdate(obj)
+
+end
 return this;
 --endregion

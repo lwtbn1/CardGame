@@ -22,6 +22,14 @@ function PreloadBundlesPanel.Start(obj)
 
 
 end
+
+function PreloadBundlesPanel.Update(obj)
+
+end
+function PreloadBundlesPanel.LateUpdate(obj)
+
+end
+
 function PreloadBundlesPanel.OnDisable(obj)
     --print("PreloadBundlesPanel OnDisable ......");
 end
