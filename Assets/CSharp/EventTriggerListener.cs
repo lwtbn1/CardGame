@@ -1,58 +1,69 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using UnityEngine.EventSystems;
-public class EventTriggerListener : MonoBehaviour ,IPointerClickHandler,IPointerDownHandler,IPointerEnterHandler,
-IPointerExitHandler,IPointerUpHandler,ISelectHandler,IUpdateSelectedHandler,IBeginDragHandler, IDragHandler, IEndDragHandler{
-	public delegate void VoidDelegate (GameObject go);
-	public VoidDelegate onClick;
-	public VoidDelegate onDown;
-	public VoidDelegate onEnter;
-	public VoidDelegate onExit;
-	public VoidDelegate onUp;
-	public VoidDelegate onSelect;
-	public VoidDelegate onUpdateSelect;
-	public VoidDelegate onBeginDrag;
+using UnityEngine;
+using LuaInterface;
+public class EventTriggerListener : EventTrigger
+{
+    public Action<PointerEventData> onBeginDrag;
+    public Action<PointerEventData> onDrag;
+    public Action<PointerEventData> onEndDrag;
+    public Action<PointerEventData> onClick;
+    public static EventTriggerListener Get(GameObject obj)
+    {
+        EventTriggerListener listener = obj.GetComponent<EventTriggerListener>();
+        if (listener == null)
+            listener = obj.AddComponent<EventTriggerListener>();
+        return listener;
+    }
+    public void RegOnBeginDrag(LuaFunction func)
+    {
+        onBeginDrag = (data) => {
+            
+            LuaHelper.Call(func, new object[]{data},false);
+        };
+    }
+
+    public void RegOnDrag(LuaFunction func)
+    {
+        onDrag = (data) =>
+        {
+            LuaHelper.Call(func, new object[] { data }, false);
+        };
+    }
+
+    public void RegOnEndDrag(LuaFunction func)
+    {
+        onEndDrag = (data) =>
+        {
+            LuaHelper.Call(func, new object[] { data }, false);
+        };
+    }
+
+    public override void OnBeginDrag(PointerEventData eventData)
+    {
+        if (onBeginDrag != null)
+            onBeginDrag(eventData);
+    }
+    public override void OnDrag(PointerEventData eventData)
+    {
+        if (onDrag != null)
+            onDrag(eventData);
+    }
+
+    public override void OnEndDrag(PointerEventData eventData)
+    {
+        if (onEndDrag != null)
+            onEndDrag(eventData);
+    }
 
 
-
-	static public EventTriggerListener Get (GameObject go)
-	{
-		EventTriggerListener listener = go.GetComponent<EventTriggerListener>();
-		if (listener == null) listener = go.AddComponent<EventTriggerListener>();
-		return listener;
-	}
-	public void OnPointerClick(PointerEventData eventData)
-	{
-		if(onClick != null) 	onClick(gameObject);
-	}
-	public void OnPointerDown (PointerEventData eventData){
-		if(onDown != null) onDown(gameObject);
-	}
-	public void OnPointerEnter (PointerEventData eventData){
-		if(onEnter != null) onEnter(gameObject);
-	}
-	public void OnPointerExit (PointerEventData eventData){
-		if(onExit != null) onExit(gameObject);
-	}
-	public void OnPointerUp (PointerEventData eventData){
-		if(onUp != null) onUp(gameObject);
-	}
-	public void OnSelect (BaseEventData eventData){
-		if(onSelect != null) onSelect(gameObject);
-	}
-	public void OnUpdateSelected (BaseEventData eventData){
-		if(onUpdateSelect != null) onUpdateSelect(gameObject);
-	}
-	public void OnBeginDrag(PointerEventData eventData){
-		if(onBeginDrag != null) onBeginDrag(gameObject);
-	}
-
-	public void OnEndDrag(PointerEventData eventData)
-	{
-	}
-
-	public void OnDrag(PointerEventData data)
-	{
-	}
+    public override void OnPointerClick(PointerEventData eventData)
+    {
+        if (onClick != null)
+            onClick(eventData);
+    }
 
 }

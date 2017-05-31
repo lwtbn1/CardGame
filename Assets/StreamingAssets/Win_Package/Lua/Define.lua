@@ -43,6 +43,10 @@ AnimationBlendMode = UnityEngine.AnimationBlendMode
 Image = UnityEngine.UI.Image
 Button = UnityEngine.UI.Button
 Toggle = UnityEngine.UI.Toggle
+Slider = UnityEngine.UI.Slider
+Text = UnityEngine.UI.Text
+GridLayoutGroup = UnityEngine.UI.GridLayoutGroup
+RectTransform = UnityEngine.RectTransform
 
 resMgr = LuaHelper.GetResManager()
 uiMgr =  LuaHelper.GetUIManager()
@@ -52,9 +56,11 @@ networkMgr = LuaHelper.GetNetworkManager()
 CtrlNames = {
 	Main = "MainCtrl",
     Login = "LoginCtrl",
+    PreloadBundles = "PreloadBundlesCtrl",
 }
 
 PanelNames = {
 	Main = "MainPanel",	
     Login = "LoginPanel",
+    PreloadBundles = "PreloadBundlesPanel";
 }

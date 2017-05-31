@@ -10,7 +10,7 @@ function LoginPanel.Awake(obj)
 
     this.ui.confirmToggle = this.transform:FindChild("ConfirmToggle"):GetComponent("Toggle");
     this.ui.SdkLoginButton = this.transform:FindChild("SdkLoginButton"):GetComponent("Button");
-    print("LoginPanel.Awake.................");
+    --print("LoginPanel.Awake.................");
     
 end
 
@@ -24,12 +24,12 @@ function LoginPanel.Start(obj)
 
 end
 function LoginPanel.OnDisable(obj)
-    print("mainPanel OnDisable ......");
+    --print("mainPanel OnDisable ......");
 end
 
 
 function LoginPanel.OnDestroy(obj)
-    print("mainPanel OnDisable ......");
+    --print("mainPanel OnDisable ......");
 end
 
 return this;

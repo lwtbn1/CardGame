@@ -13,7 +13,11 @@ using System.Collections.Generic;
 using LuaInterface;
 public class UIManager : MonoBehaviour
 {
-    string curOpenPanel;
+    class UIPanel {
+        public string name;
+        public LuaTable luaRef;
+    }
+    UIPanel curOpenPanel;
     Dictionary<string, GameObject> panelCache = new Dictionary<string, GameObject>();
     Dictionary<string, GameObject> popupsCache = new Dictionary<string, GameObject>();
     /// <summary>
@@ -25,7 +29,12 @@ public class UIManager : MonoBehaviour
     /// <param name="syn"></param>
     public void PushPanel(string bundleName, string panelName, LuaTable table)
     {
-        curOpenPanel = panelName;
+        HidePanel();
+        bundleName = "panel/" + bundleName;
+        curOpenPanel = new UIPanel() {
+            name = panelName,
+            luaRef = table,
+        };
         if (panelCache.ContainsKey(panelName))
         {
             GameObject willShowPanel = null;
@@ -50,16 +59,24 @@ public class UIManager : MonoBehaviour
                 LuaFunction func = table.GetLuaFunction("OnCreate");
                 if (func != null)
                     func.Call(panel);
-                    
             });
-           
         }
     }
 
-    public void HidePanel(string panelName)
+    public void HidePanel()
     {
+        if (curOpenPanel == null)
+            return;
         GameObject curPanel = null;
-        panelCache.TryGetValue(curOpenPanel, out curPanel);
+        panelCache.TryGetValue(curOpenPanel.name, out curPanel);
+        LuaFunction func = curOpenPanel.luaRef.GetLuaFunction("OnDisable");
+        if (func != null)
+        {
+            func.Call();
+            func.Dispose();
+            func = null;
+        }
+            
         if (curPanel != null)
             curPanel.SetActive(false);
     }
@@ -73,7 +90,7 @@ public class UIManager : MonoBehaviour
     {
         GameObject tipsObj = null;
         ResManager resMgr = GameManager.Instance.GetManager<ResManager>("ResManager");
-        resMgr.LoadTipsAsyn("Tips", "TextTips", (obj) => {
+        resMgr.LoadTipsAsyn("panel/Tips", "TextTips", (obj) => {
             tipsObj = GameObject.Instantiate<GameObject>(obj);
             tipsObj.GetComponent<Text>().text = tip;
             UIUtil.SetParent(Global.TipsRoot.transform, tipsObj.transform);

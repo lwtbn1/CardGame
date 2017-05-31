@@ -33,4 +33,21 @@ public class LuaHelper {
         object[] ret = GameManager.Instance.GetManager<LuaManager>("LuaManager").DoString(lua);
         return ret[0] as LuaTable;
     }
+
+    public static object[] Call(LuaFunction func,object[] param, bool dispose)
+    {
+        if (func == null)
+            return null;
+        object[] result = func.Call(param);
+        if (dispose)
+            LuaFuncDispose(func);
+        return result;
+    }
+
+    public static void LuaFuncDispose(LuaFunction func)
+    {
+        func.Dispose();
+        func = null;
+        
+    }
 }

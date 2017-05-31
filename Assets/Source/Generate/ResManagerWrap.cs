@@ -9,10 +9,14 @@ public class ResManagerWrap
 		L.BeginClass(typeof(ResManager), typeof(UnityEngine.MonoBehaviour));
 		L.RegFunction("LoadSpriteSyn", LoadSpriteSyn);
 		L.RegFunction("LoadSpriteAsyn", LoadSpriteAsyn);
+		L.RegFunction("LoadAssetAsynYed", LoadAssetAsynYed);
+		L.RegFunction("LoadBundleAsynYed", LoadBundleAsynYed);
 		L.RegFunction("LoadPanelAsyn", LoadPanelAsyn);
 		L.RegFunction("LoadTipsAsyn", LoadTipsAsyn);
+		L.RegFunction("LoadAssetAsyn", LoadAssetAsyn);
 		L.RegFunction("getBundle", getBundle);
 		L.RegFunction("UnloadBundle", UnloadBundle);
+		L.RegFunction("LoadBundles", LoadBundles);
 		L.RegFunction("__eq", op_Equality);
 		L.RegFunction("__tostring", ToLua.op_ToString);
 		L.EndClass();
@@ -60,6 +64,56 @@ public class ResManagerWrap
 			}
 
 			System.Collections.IEnumerator o = obj.LoadSpriteAsyn(arg0, arg1, arg2);
+			ToLua.Push(L, o);
+			return 1;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int LoadAssetAsynYed(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 4);
+			ResManager obj = (ResManager)ToLua.CheckObject(L, 1, typeof(ResManager));
+			string arg0 = ToLua.CheckString(L, 2);
+			string arg1 = ToLua.CheckString(L, 3);
+			System.Action<UnityEngine.GameObject> arg2 = null;
+			LuaTypes funcType4 = LuaDLL.lua_type(L, 4);
+
+			if (funcType4 != LuaTypes.LUA_TFUNCTION)
+			{
+				 arg2 = (System.Action<UnityEngine.GameObject>)ToLua.CheckObject(L, 4, typeof(System.Action<UnityEngine.GameObject>));
+			}
+			else
+			{
+				LuaFunction func = ToLua.ToLuaFunction(L, 4);
+				arg2 = DelegateFactory.CreateDelegate(typeof(System.Action<UnityEngine.GameObject>), func) as System.Action<UnityEngine.GameObject>;
+			}
+
+			System.Collections.IEnumerator o = obj.LoadAssetAsynYed(arg0, arg1, arg2);
+			ToLua.Push(L, o);
+			return 1;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int LoadBundleAsynYed(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 2);
+			ResManager obj = (ResManager)ToLua.CheckObject(L, 1, typeof(ResManager));
+			string arg0 = ToLua.CheckString(L, 2);
+			System.Collections.IEnumerator o = obj.LoadBundleAsynYed(arg0);
 			ToLua.Push(L, o);
 			return 1;
 		}
@@ -132,6 +186,25 @@ public class ResManagerWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int LoadAssetAsyn(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 4);
+			ResManager obj = (ResManager)ToLua.CheckObject(L, 1, typeof(ResManager));
+			string arg0 = ToLua.CheckString(L, 2);
+			string arg1 = ToLua.CheckString(L, 3);
+			LuaFunction arg2 = ToLua.CheckLuaFunction(L, 4);
+			obj.LoadAssetAsyn(arg0, arg1, arg2);
+			return 0;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int getBundle(IntPtr L)
 	{
 		try
@@ -159,6 +232,26 @@ public class ResManagerWrap
 			string arg0 = ToLua.CheckString(L, 2);
 			bool arg1 = LuaDLL.luaL_checkboolean(L, 3);
 			obj.UnloadBundle(arg0, arg1);
+			return 0;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int LoadBundles(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 5);
+			ResManager obj = (ResManager)ToLua.CheckObject(L, 1, typeof(ResManager));
+			LuaTable arg0 = ToLua.CheckLuaTable(L, 2);
+			LuaFunction arg1 = ToLua.CheckLuaFunction(L, 3);
+			LuaFunction arg2 = ToLua.CheckLuaFunction(L, 4);
+			LuaFunction arg3 = ToLua.CheckLuaFunction(L, 5);
+			obj.LoadBundles(arg0, arg1, arg2, arg3);
 			return 0;
 		}
 		catch(Exception e)

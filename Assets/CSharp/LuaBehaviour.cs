@@ -56,8 +56,7 @@ public class LuaBehaviour : MonoBehaviour
         RemoveClick(go);
         buttons.Add(go, luafunc);
         go.GetComponent<Button>().onClick.AddListener(
-            delegate()
-            {
+            () => { 
                 luafunc.Call(go);
             }
         );
@@ -101,6 +100,5 @@ public class LuaBehaviour : MonoBehaviour
             toggles.Remove(go);
         }
     }
-
 
 }

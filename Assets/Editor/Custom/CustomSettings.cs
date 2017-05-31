@@ -57,29 +57,12 @@ public static class CustomSettings
         _GT(typeof(NetworkManager)),
         _GT(typeof(UnityEngine.SceneManagement.SceneManager)),
         _GT(typeof(LuaBehaviour)),
-        //_GT(typeof(iTween)),
-        
+        _GT(typeof(EventTriggerListener)),
+        _GT(typeof(DOTweenDelegate)),
+        _GT(typeof(UIUtil)),
 
-#if USING_DOTWEENING
-        _GT(typeof(DG.Tweening.DOTween)),
-        _GT(typeof(DG.Tweening.Tween)).SetBaseType(typeof(System.Object)).AddExtendType(typeof(DG.Tweening.TweenExtensions)),
-        _GT(typeof(DG.Tweening.Sequence)).AddExtendType(typeof(DG.Tweening.TweenSettingsExtensions)),
-        _GT(typeof(DG.Tweening.Tweener)).AddExtendType(typeof(DG.Tweening.TweenSettingsExtensions)),
-        _GT(typeof(DG.Tweening.LoopType)),
-        _GT(typeof(DG.Tweening.PathMode)),
-        _GT(typeof(DG.Tweening.PathType)),
-        _GT(typeof(DG.Tweening.RotateMode)),
-        _GT(typeof(Component)).AddExtendType(typeof(DG.Tweening.ShortcutExtensions)),
-        _GT(typeof(Transform)).AddExtendType(typeof(DG.Tweening.ShortcutExtensions)),
-        _GT(typeof(Light)).AddExtendType(typeof(DG.Tweening.ShortcutExtensions)),
-        _GT(typeof(Material)).AddExtendType(typeof(DG.Tweening.ShortcutExtensions)),
-        _GT(typeof(Rigidbody)).AddExtendType(typeof(DG.Tweening.ShortcutExtensions)),
-        _GT(typeof(Camera)).AddExtendType(typeof(DG.Tweening.ShortcutExtensions)),
-        _GT(typeof(AudioSource)).AddExtendType(typeof(DG.Tweening.ShortcutExtensions)),
-        //_GT(typeof(LineRenderer)).AddExtendType(typeof(DG.Tweening.ShortcutExtensions)),
-        //_GT(typeof(TrailRenderer)).AddExtendType(typeof(DG.Tweening.ShortcutExtensions)),    
-#else
-                                         
+
+              
         _GT(typeof(Component)),
         _GT(typeof(Transform)),
         _GT(typeof(Material)),
@@ -88,13 +71,13 @@ public static class CustomSettings
         _GT(typeof(Camera)),
         _GT(typeof(AudioSource)),
         _GT(typeof(UnityEngine.UI.Image)),
+        _GT(typeof(UnityEngine.UI.Text)),
         _GT(typeof(UnityEngine.UI.Button)),
         _GT(typeof(UnityEngine.UI.Toggle)),
+        _GT(typeof(UnityEngine.UI.Slider)),
+        
+        
 
-        //_GT(typeof(LineRenderer))
-        //_GT(typeof(TrailRenderer))
-#endif
-      
         _GT(typeof(Behaviour)),
         _GT(typeof(MonoBehaviour)),        
         _GT(typeof(GameObject)),
@@ -152,10 +135,11 @@ public static class CustomSettings
         _GT(typeof(BlendWeights)),           
         _GT(typeof(RenderTexture)),
         _GT(typeof(Resources)),
-
-
+        _GT(typeof(UnityEngine.EventSystems.PointerEventData)),
         
-        
+        _GT(typeof(UnityEngine.UI.GridLayoutGroup)),
+        _GT(typeof(UnityEngine.RectTransform)),
+    
     };
 
     public static List<Type> dynamicList = new List<Type>()

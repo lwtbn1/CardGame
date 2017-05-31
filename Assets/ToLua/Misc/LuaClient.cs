@@ -157,6 +157,7 @@ public class LuaClient : MonoBehaviour
     protected virtual void Bind()
     {        
         LuaBinder.Bind(luaState);
+        //这种协程的方式比较耗性能
         LuaCoroutine.Register(luaState, this);
     }
 

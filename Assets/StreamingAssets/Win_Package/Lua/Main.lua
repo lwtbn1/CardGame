@@ -8,8 +8,8 @@ function Main()
     ViewMgr.Init();
 
 
-    local loginCtrl = CtrlMgr.GetCtrl(CtrlNames.Login);
-    loginCtrl.PushPanel();
+    local preloadBundlesCtrl = CtrlMgr.GetCtrl(CtrlNames.PreloadBundles);
+    preloadBundlesCtrl.PushPanel();
     
 
 end

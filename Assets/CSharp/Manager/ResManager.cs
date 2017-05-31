@@ -63,31 +63,63 @@ public class ResManager : MonoBehaviour
     /// <param name="assetName"></param>
     /// <param name="callBack"></param>
     /// <returns></returns>
-    private IEnumerator LoadAssetAsynYed(string bundleName, string assetName, Action<GameObject> callBack)
+    public IEnumerator LoadAssetAsynYed(string bundleName, string assetName, Action<GameObject> callBack)
     {
+        bundleName = bundleName.ToLower();
+        yield return LoadBundleAsynYed(bundleName);
+        AssetBundle bundle = getBundle(bundleName);
+        GameObject obj = bundle.LoadAsset<GameObject>(assetName);
+        if (callBack != null)
+            callBack(obj);
+    }
+    public IEnumerator LoadBundleAsynYed(string bundleName)
+    {
+        bundleName = bundleName.ToLower();
         AssetBundle bundle = getBundle(bundleName);
         if (bundle == null)
         {
-            AssetBundleCreateRequest bundleReq = AssetBundle.LoadFromFileAsync(GameDef.PanelPathRoot + bundleName + GameDef.BundleExtName);
+            AssetBundleCreateRequest bundleReq = AssetBundle.LoadFromFileAsync(GameDef.BundlePathRoot + "/" + bundleName + GameDef.BundleExtName);
             while (!bundleReq.isDone)
                 yield return false;
             bundle = bundleReq.assetBundle;
 
         }
         cacheBundle(bundleName, bundle);
-        GameObject obj = bundle.LoadAsset<GameObject>(assetName);
-        if (callBack != null)
-            callBack(obj);
     }
-
+    /// <summary>
+    /// 加载面板
+    /// </summary>
+    /// <param name="bundleName"></param>
+    /// <param name="assetName"></param>
+    /// <param name="callBack"></param>
     public void LoadPanelAsyn(string bundleName, string assetName, Action<GameObject> callBack)
     {
         StartCoroutine(LoadAssetAsynYed(bundleName, assetName, callBack));
     }
+    /// <summary>
+    /// 加载tips
+    /// </summary>
+    /// <param name="bundleName"></param>
+    /// <param name="assetName"></param>
+    /// <param name="callBack"></param>
     public void LoadTipsAsyn(string bundleName, string assetName, Action<GameObject> callBack)
     {
         StartCoroutine(LoadAssetAsynYed(bundleName, assetName, callBack));
     }
+
+    /// <summary>
+    /// 加载某一资源
+    /// </summary>
+    /// <param name="bundleName"></param>
+    /// <param name="assetName"></param>
+    /// <param name="func"></param>
+    public void LoadAssetAsyn(string bundleName, string assetName, LuaFunction func)
+    {
+        StartCoroutine(LoadAssetAsynYed(bundleName, assetName, (asset) => {
+            LuaHelper.Call(func, new object[] { asset }, true);
+        }));
+    }
+
     /// <summary>
     /// 缓存加载出来的bundle
     /// </summary>
@@ -123,9 +155,29 @@ public class ResManager : MonoBehaviour
             bundles[name].Unload(unloadAllLoadedObjects);
         }
     }
+    #region 预加载Bundles
+    private IEnumerator LoadBundlesYed(LuaTable table, LuaFunction onStartLoad, LuaFunction onLoading, LuaFunction onEndLoad)
+    {
+        if (table == null || table.Length == 0)
+            yield break;
+        object[] array = table.ToArray();
+        LuaHelper.Call(onStartLoad,null,true);
+        for (var i = 0; i < array.Length; i++)
+        {
+            string bundleName = array[i].ToString();
+            yield return LoadBundleAsynYed(bundleName);
+            yield return new WaitForSeconds(0.1f);
+            LuaHelper.Call(onLoading, new object[]{(float)(i + 1) / (float)array.Length}, false);
+        }
+        LuaHelper.LuaFuncDispose(onLoading);
+        LuaHelper.Call(onEndLoad,null,true);
 
-
-
+    }
+    public void LoadBundles(LuaTable table, LuaFunction onStartLoad, LuaFunction onLoading, LuaFunction onEndLoad)
+    {
+        StartCoroutine(LoadBundlesYed(table, onStartLoad, onLoading, onEndLoad));
+    }
+    #endregion
 }
 
 

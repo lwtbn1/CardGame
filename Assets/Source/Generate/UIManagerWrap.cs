@@ -40,10 +40,9 @@ public class UIManagerWrap
 	{
 		try
 		{
-			ToLua.CheckArgsCount(L, 2);
+			ToLua.CheckArgsCount(L, 1);
 			UIManager obj = (UIManager)ToLua.CheckObject(L, 1, typeof(UIManager));
-			string arg0 = ToLua.CheckString(L, 2);
-			obj.HidePanel(arg0);
+			obj.HidePanel();
 			return 0;
 		}
 		catch(Exception e)

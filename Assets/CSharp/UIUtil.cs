@@ -52,5 +52,19 @@ public class UIUtil  {
             });
     }
 
+    public static int TextLen(string input, Text text)
+    {
+        CharacterInfo characterInfo;
+        Font font = text.font;
+        int width = 0;
+        FontStyle fontStyle = text.fontStyle;
+        font.RequestCharactersInTexture(input, text.fontSize, fontStyle);
+        for (int i = 0; i < input.Length; i++)
+        {
+            font.GetCharacterInfo(input[i], out characterInfo, text.fontSize);
+            width += characterInfo.advance;
+        }
+        return width;
+    }
 
 }

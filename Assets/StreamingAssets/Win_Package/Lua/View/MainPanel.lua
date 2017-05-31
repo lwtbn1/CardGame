@@ -7,16 +7,23 @@ this.ui = {};
 this.gameObject = nil;
 this.transform = nil;
 
+
 function MainPanel.Awake(obj)
     this.gameObject = obj;
     this.transform = obj.transform;
 
-    this.ui.img_1 = this.transform:FindChild("img_1"):GetComponent("Image");
-    this.ui.img_2 = this.transform:FindChild("img_2"):GetComponent("Image");
-    this.ui.img_3 = this.transform:FindChild("img_3"):GetComponent("Image");
-    this.ui.CloseButton = this.transform:FindChild("CloseButton").gameObject;
-    print("MainPanel.Awake.................");
+    this.ui.NoticeGrid = this.transform:FindChild("Notice/NoticeGrid");
+    this.ui.NoticeGridLayoutGroup = this.ui.NoticeGrid:GetComponent("GridLayoutGroup")
+    this.ui.NoticeItemTemp = this.transform:FindChild("Notice/NoticeItemTemp").gameObject;
+    this.ui.NoticeDrag = this.transform:FindChild("Notice/NoticeDrag").gameObject;
+    this.eventTriggerListener = EventTriggerListener.Get(this.ui.NoticeDrag);
+    this.ui.CreateRoomButton = this.transform:FindChild("CreateRoomButton"):GetComponent("Button");
+    this.ui.JoinRoomButton = this.transform:FindChild("JoinRoomButton"):GetComponent("Button");
+    this.ui.infoText = this.transform:FindChild("Infos/Notice/Text"):GetComponent("Text");
+    this.ui.InfosRect = this.transform:FindChild("Infos"):GetComponent("RectTransform");
     
+    print("MainPanel.Awake.................");
+    print(this.eventTriggerListener);
 end
 
 
@@ -29,12 +36,12 @@ function MainPanel.Start(obj)
 
 end
 function MainPanel.OnDisable(obj)
-    print("mainPanel OnDisable ......");
+    --print("mainPanel OnDisable ......");
 end
 
 
 function MainPanel.OnDestroy(obj)
-    print("mainPanel OnDisable ......");
+    --print("mainPanel OnDisable ......");
 end
 
 return this;

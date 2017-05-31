@@ -13,6 +13,8 @@ public class LuaHelperWrap
 		L.RegFunction("AddUpdateEvent", AddUpdateEvent);
 		L.RegFunction("RemoveUpdateEvent", RemoveUpdateEvent);
 		L.RegFunction("GetModule", GetModule);
+		L.RegFunction("Call", Call);
+		L.RegFunction("LuaFuncDispose", LuaFuncDispose);
 		L.RegFunction("New", _CreateLuaHelper);
 		L.RegFunction("__tostring", ToLua.op_ToString);
 		L.EndClass();
@@ -134,6 +136,41 @@ public class LuaHelperWrap
 			LuaInterface.LuaTable o = LuaHelper.GetModule(arg0);
 			ToLua.Push(L, o);
 			return 1;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int Call(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 3);
+			LuaFunction arg0 = ToLua.CheckLuaFunction(L, 1);
+			object[] arg1 = ToLua.CheckObjectArray(L, 2);
+			bool arg2 = LuaDLL.luaL_checkboolean(L, 3);
+			object[] o = LuaHelper.Call(arg0, arg1, arg2);
+			ToLua.Push(L, o);
+			return 1;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int LuaFuncDispose(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 1);
+			LuaFunction arg0 = ToLua.CheckLuaFunction(L, 1);
+			LuaHelper.LuaFuncDispose(arg0);
+			return 0;
 		}
 		catch(Exception e)
 		{
