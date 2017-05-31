@@ -90,6 +90,7 @@
     <Compile Include="src\Common\functions.lua" />
     <Compile Include="src\Common\protocal.lua" />
     <Compile Include="src\Common\Util.lua" />
+    <Compile Include="src\Control\PreloadBundlesCtrl.lua" />
     <Compile Include="src\Control\LoginCtrl.lua" />
     <Compile Include="src\Control\MainCtrl.lua" />
     <Compile Include="src\Define.lua" />
@@ -101,6 +102,7 @@
     <Compile Include="src\Model\PlayerModel.lua" />
     <Compile Include="src\NetDefine.lua" />
     <Compile Include="src\Network.lua" />
+    <Compile Include="src\View\PreloadBundlesPanel.lua" />
     <Compile Include="src\View\LoginPanel.lua" />
     <Compile Include="src\View\MainPanel.lua" />
   </ItemGroup>
