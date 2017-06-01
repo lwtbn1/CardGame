@@ -7,7 +7,7 @@ public class PackageWindow : EditorWindow {
 
     string resVersionInput = "";
     int plateformSelect = 0;
-    [MenuItem("Pack/PackCurrentPlatform")]
+    [MenuItem("Pack/打包当前平台")]
     public static void Show()
     {
         PackageWindow window = EditorWindow.GetWindowWithRect<PackageWindow>(new Rect(0f,0f,400f,200f),true,"打包",true);

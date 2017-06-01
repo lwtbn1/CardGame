@@ -18,6 +18,7 @@ public static class LuaBinder
 		EventTriggerListenerWrap.Register(L);
 		DOTweenDelegateWrap.Register(L);
 		UIUtilWrap.Register(L);
+		SdkAdapterWrap.Register(L);
 		L.BeginModule("UnityEngine");
 		UnityEngine_ComponentWrap.Register(L);
 		UnityEngine_TransformWrap.Register(L);

@@ -1,0 +1,865 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: io41BQZHqIg0NhLPRNum4IAbMgA=
+Created-By: 1.0 (Android)
+
+Name: assets/Android_Package/Lua/eventlib.lua
+SHA1-Digest: cFMeObF6gghO64a249G3jtYV5kw=
+
+Name: assets/Android_Package/ToLua/protobuf/decoder.lua
+SHA1-Digest: RM6N/wtXkK1YLabpG/6JIYo/iAg=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/installpath.lua
+SHA1-Digest: mP95Mu4KoZvQ8LeTbQg+7TXSCO4=
+
+Name: assets/bin/Data/7d7edaf98b78bd84297bb888bf41ed02
+SHA1-Digest: zinJuJD8GMW6lBJLqiAXRi0/tlk=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/Makefile.mingw
+SHA1-Digest: vI/5go4jlB9+vDP3vFRLdPySQc4=
+
+Name: assets/Win_Package/ToLua/socket/ftp.lua
+SHA1-Digest: m/M0vBSlkgIQBkEDBKEgJ+3KlZo=
+
+Name: assets/Win_Package/Lua/3rd/cjson/example4.json
+SHA1-Digest: uyITPYaCEhltUrHQT9Of0TzGsW8=
+
+Name: assets/Win_Package/Lua/Control/MainCtrl.lua
+SHA1-Digest: 4kbAWrIJcIxO2BZ+674jFd1iq2U=
+
+Name: assets/Win_Package/ToLua/System/Timer.lua
+SHA1-Digest: ajbwVfDOv/YEOH/cPn1Ro1qJAQ0=
+
+Name: assets/Win_Package/ToLua/System/coroutine.lua
+SHA1-Digest: bI3CJb2F+1f0Eedu//maKjkm/s0=
+
+Name: assets/Android_Package/ToLua/slot.lua
+SHA1-Digest: 4X+/3OXdKYa4R3CC9MmDdRbIIZM=
+
+Name: assets/Android_Package/ToLua/misc/strict.lua
+SHA1-Digest: LYmqavpl3U0PVXxmkHSA8obGdsQ=
+
+Name: assets/Android_Package/ToLua/socket/url.lua
+SHA1-Digest: PnnMs0RiBwV5XI/Pc8Lp7rkt2ao=
+
+Name: assets/Win_Package/Lua/3rd/sproto/test.lua
+SHA1-Digest: j9tCpM9jvtl9BiiW/BO2XR1DTNw=
+
+Name: assets/Android_Package/Lua/Define.lua
+SHA1-Digest: huP8CEZSNrsdrVMFPVwZ+TflNoo=
+
+Name: assets/Android_Package/Lua/Manager/CtrlMgr.lua
+SHA1-Digest: 21Wy7qu1MayhgWDFi+xwZ4k1Kb8=
+
+Name: assets/Win_Package/Lua/3rd/pbc/protobuf.lua
+SHA1-Digest: /SgsZWJFuuUdOhr8pFIVBsIXLWw=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/doc/index.html
+SHA1-Digest: UKR+PH680I91u34pTpc/fG7hcaU=
+
+Name: assets/Android_Package/Lua/View/MainPanel.lua
+SHA1-Digest: G7hYmpxUC+ZKGFDkExiceLYLSyg=
+
+Name: assets/Win_Package/ToLua/UnityEngine/Vector3.lua
+SHA1-Digest: E0x/lg9/8obcs2VPzL40Sqbu01c=
+
+Name: assets/Win_Package/Lua/Control/LoginCtrl.lua
+SHA1-Digest: PGz+18/SttNtUXmo/eVE8FBJa54=
+
+Name: assets/bin/Data/settings.xml
+SHA1-Digest: qfSAiMXIjq+uYlj++onN31q44FI=
+
+Name: assets/Android_Package/ToLua/UnityEngine/Mathf.lua
+SHA1-Digest: uIHb558eFg8OPsi1vFEsA9DdpGg=
+
+Name: assets/Win_Package/panel/loginpanel.pak.manifest
+SHA1-Digest: gKdtw58Ut+sgBJGrbCYco4Z9z/w=
+
+Name: assets/resVersion.ini
+SHA1-Digest: gFR+TRza97KhqGeJMH8ChR1POQQ=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/doc/contact.html
+SHA1-Digest: knAYiyCKfKZd+F4SAyEcGdc81vk=
+
+Name: assets/Win_Package/ToLua/socket/headers.lua
+SHA1-Digest: RkOmiAP3AbzvFjrr6sR2TSN+ZNo=
+
+Name: assets/Android_Package/panel/preloadbundlespanel.pak
+SHA1-Digest: Uqj3/uZWOx707Ks0VY9itSpavQQ=
+
+Name: assets/Win_Package/panel/tips.pak.manifest
+SHA1-Digest: LdYuqmzhsoUMon0ZGazFDmd0mIQ=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/Makefile
+SHA1-Digest: 9U2yTrjySK+eGEjp1sRUnMfZCe8=
+
+Name: assets/Win_Package/Lua/3rd/sproto/testrpc.lua
+SHA1-Digest: GUZ04Q2SrulSNo0Rc2pEozMNBJM=
+
+Name: assets/Win_Package/ToLua/protobuf/wire_format.lua
+SHA1-Digest: 6xjHM+soziLRCmgmL/VAg3QV2DM=
+
+Name: resources.arsc
+SHA1-Digest: 3CTkhSSyrkRs37bE3Fusc3AMBp8=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/doc/install.html
+SHA1-Digest: OomTmeQruMni4wTJFJgAT00qKqY=
+
+Name: assets/Android_Package/ToLua/cjson/util.lua
+SHA1-Digest: FaswimFnz/POnlNilSenLc3c8Ow=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/doc/semantics.html
+SHA1-Digest: cbWQ5eDzum15Ecor5eLqlPHyE+s=
+
+Name: assets/Android_Package/ToLua/UnityEngine/LayerMask.lua
+SHA1-Digest: GRshQUWxrdsz9HeB6uwz+GpuncU=
+
+Name: assets/Android_Package/ToLua/event.lua
+SHA1-Digest: o4FOW4nnG+LwQpNQEQ0zvPkM0Os=
+
+Name: AndroidManifest.xml
+SHA1-Digest: QpDQqsXMSsGsGsoPRqRtG8N9FxA=
+
+Name: assets/bin/Data/Managed/UnityEngine.UI.dll
+SHA1-Digest: q+xRhtllVfEbmQfQccX7NhGV/Tk=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/README
+SHA1-Digest: ancNZ2UhBk794i+9pMhJPn3LRfU=
+
+Name: assets/Win_Package/Win_Package
+SHA1-Digest: 63mxUIdoVPJFSADA4T9FcdAcAOA=
+
+Name: assets/Android_Package/panel/tips.pak
+SHA1-Digest: +NRl+5fztPcZ9WsAbC1wQrE9XBQ=
+
+Name: assets/Android_Package/ToLua/protobuf/protobuf.lua
+SHA1-Digest: f7px9A8lEwi/MzCDm71gtZIzPcc=
+
+Name: assets/Win_Package/ToLua/ltn12.lua
+SHA1-Digest: TCjorAuS3xuUWYgSQ6vjG1kitsY=
+
+Name: assets/Win_Package/Lua/3rd/cjson/lua2json.lua
+SHA1-Digest: usaOSJv/G+XYMMlDF397NqdKYtg=
+
+Name: assets/Win_Package/Lua/3rd/sproto/sprotoparser.lua
+SHA1-Digest: vTVEU8PFo4bZessEWnqD0KOyYiY=
+
+Name: lib/armeabi-v7a/libmain.so
+SHA1-Digest: LeDCqV9dZGL4XkgBPxdlpzUj/QE=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/Makefile
+SHA1-Digest: rTL9cMFrdS0Tc+fQRnAtzmB3nsc=
+
+Name: assets/bin/Data/Managed/UnityEngine.dll
+SHA1-Digest: gxJRDPgOhfFB6vRJ7qanGfXRp6A=
+
+Name: assets/Android_Package/ToLua/UnityEngine/RaycastHit.lua
+SHA1-Digest: spz/3hqiVHLGdorucs6lALjy3u4=
+
+Name: assets/Win_Package/Lua/View/LoginPanel.lua
+SHA1-Digest: 25Uxz0upqGNDeeviIU12SD0CWJQ=
+
+Name: assets/Win_Package/Lua/3rd/pbc/test.lua
+SHA1-Digest: 8UxZT9oogIfkkkP+ru3lxRnjiJs=
+
+Name: assets/Android_Package/Lua/3rd/pbc/parser.lua
+SHA1-Digest: wXaD34SwuLrul/noIAz3xx+YnKs=
+
+Name: assets/Android_Package/Lua/3rd/sproto/sproto.lua
+SHA1-Digest: QYSwCQMho3dzzW2cKVKsdmT9JQY=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/doc/img/contact.png
+SHA1-Digest: FoSWKKoEZYXgkSLfPQfZ3b/fges=
+
+Name: assets/Android_Package/ToLua/UnityEngine/Vector2.lua
+SHA1-Digest: tOmZ30d+COPLuM1TnTFnJdDZeN0=
+
+Name: assets/Win_Package/ToLua/lpeg/re.lua
+SHA1-Digest: SXXGZHTdDPBY7xT4YGFRjZFszBw=
+
+Name: assets/Win_Package/Lua/Common/protocal.lua
+SHA1-Digest: xrK/oxo1TbIzKcNgCpz6aAUehDs=
+
+Name: assets/Android_Package/Lua/3rd/sproto/testall.lua
+SHA1-Digest: GA7a6HBRNXG1NCWk6YAifokUtrs=
+
+Name: assets/Android_Package/Lua/3rd/pbc/testparser.lua
+SHA1-Digest: /euBSlbxQ3pbDf/YGDpmmM+LNyg=
+
+Name: assets/bin/Data/Managed/UnityEngine.Analytics.dll
+SHA1-Digest: CS7rDknYcokHD3DZuBoTwVIjKus=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/installpath.lua
+SHA1-Digest: lrwKme+8UwIXmNSZm8H6ZJaXjxk=
+
+Name: assets/Android_Package/ToLua/list.lua
+SHA1-Digest: TN1zjTnyYVvvTlCSoMThSfHQ7q8=
+
+Name: assets/Win_Package/ToLua/UnityEngine/Touch.lua
+SHA1-Digest: rQaPWY0xxTihdk2L9Y4g3Nls/w4=
+
+Name: assets/Android_Package/ToLua/protobuf/wire_format.lua
+SHA1-Digest: RW1QL0j+ay9F58OErzu4DU2UypM=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/doc/semantics.html
+SHA1-Digest: KSWvNEoam6J4reonN3wqzvR01e0=
+
+Name: assets/Win_Package/panel/mainpanel.pak.manifest
+SHA1-Digest: S5VsYP0W21WbLyZ1uUIDsQpnZto=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/Makefile.mingw
+SHA1-Digest: /rlnMsKglCew5FBBadyz1F9sMLU=
+
+Name: assets/Android_Package/ToLua/protobuf/descriptor.lua
+SHA1-Digest: lRBb5N6lMcp7vzGWhKprbmVCG1k=
+
+Name: assets/bin/Data/9a5684e0e56583c43b809876b457c953
+SHA1-Digest: sCMEuVzIqCokbYNRJ/vFm0+nRCE=
+
+Name: assets/Win_Package/Lua/3rd/cjson/test.lua
+SHA1-Digest: X7xKIuPrOSEDUokwfPkjaCLkROg=
+
+Name: assets/Android_Package/Lua/Control/MainCtrl.lua
+SHA1-Digest: DVXFQNTdpM0AShruz8hlE1dMaZo=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/bitbench.lua
+SHA1-Digest: 1B9n3YIgfOjb/IAMwHH12zXu3vs=
+
+Name: assets/Android_Package/Lua/3rd/cjson/example2.json
+SHA1-Digest: IY3zr3PS7ngJ/bTcoGKQg6wo2gM=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/doc/api.html
+SHA1-Digest: Uoc89azYJS2TjkrEyESbNxsGIQQ=
+
+Name: assets/Android_Package/Lua/3rd/pblua/login_pb.lua
+SHA1-Digest: JRfWGj9D3i61nyjE3BQf7LSlHHY=
+
+Name: assets/Win_Package/Lua/3rd/pbc/addressbook.pb
+SHA1-Digest: WzjwBQDjwaWtuJEC4H6yokYQ790=
+
+Name: assets/Win_Package/ToLua/protobuf/protobuf.lua
+SHA1-Digest: ozyTXz+1XWRJaAWbBRsHs9n9AjE=
+
+Name: assets/Android_Package/Lua/3rd/pblua/person_pb.lua
+SHA1-Digest: aXMQdXwUMMMuKRNiZo0X7hAns9Q=
+
+Name: assets/Win_Package/ToLua/socket/mbox.lua
+SHA1-Digest: xvuh7O2DFYqq4lBv1qmC1VEi5EI=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/doc/bluequad-print.css
+SHA1-Digest: W6qu9EvILvAE2MJUJob4FZbHcKc=
+
+Name: assets/Win_Package/Lua/eventlib.lua
+SHA1-Digest: Q3pHKxEfST5gAiQUaqvnpTwl5X8=
+
+Name: assets/Win_Package/Win_Package.manifest
+SHA1-Digest: hPOCUtxmrUMIolAbpT0W9gbL60U=
+
+Name: assets/Android_Package/Lua/3rd/cjson/example3.json
+SHA1-Digest: KJvlRs/abJzHnJcZCdW1jPUUZFU=
+
+Name: assets/bin/Data/Managed/DOTween43.dll
+SHA1-Digest: jaYCjPuH4Fi2K921dDvS5x6aZy8=
+
+Name: assets/Win_Package/ToLua/mime.lua
+SHA1-Digest: QTaqPa5eFPFc0+J5yeXs6fF1R7U=
+
+Name: assets/Android_Package/ToLua/UnityEngine/Touch.lua
+SHA1-Digest: UWD8b0qW6aCR6bCbUgiEmtVfVIE=
+
+Name: assets/Android_Package/Lua/Common/Util.lua
+SHA1-Digest: QR8zJ5Fe62ZJWioaGNCLv7xF+MM=
+
+Name: assets/Win_Package/ToLua/UnityEngine/Vector2.lua
+SHA1-Digest: 173wzY9QI3/FMbkNVLPiotYkYAs=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/md5test.lua
+SHA1-Digest: DS+P3yOl6GUFZOJJvfDGXtYN4Z8=
+
+Name: assets/Android_Package/Lua/3rd/cjson/example1.json
+SHA1-Digest: uhlckvBEZBZZRK9IleHQ+pH081w=
+
+Name: assets/Win_Package/Lua/events.lua
+SHA1-Digest: QwXwdROGB7koR3oyTCHQGJ1nE/0=
+
+Name: assets/bin/Data/globalgamemanagers.assets
+SHA1-Digest: POeJOSuGbyTCxM7GeFJuyVBYIzk=
+
+Name: assets/Win_Package/Lua/Main.lua
+SHA1-Digest: 3U2sENQvzEpXRBwzf39UqKCC2N0=
+
+Name: assets/Android_Package/panel/mainpanel.pak
+SHA1-Digest: 9O7OfwDj/rSI9aaWpkPbByXEvGw=
+
+Name: assets/Win_Package/panel/mainpanel.pak
+SHA1-Digest: iskl/y66GB1NGK6VGHoG6JPhPAo=
+
+Name: lib/x86/libmain.so
+SHA1-Digest: lquCS6SWR0fp9+aAVyU09dSKoC8=
+
+Name: assets/Android_Package/Lua/Control/PreloadBundlesCtrl.lua
+SHA1-Digest: 5CV1vNr+n5fHo58Emd+tibr0IME=
+
+Name: assets/bin/Data/Managed/System.Core.dll
+SHA1-Digest: yQMlDngMxm45GmQCaORyT9uF7jg=
+
+Name: assets/Win_Package/Lua/Common/Util.lua
+SHA1-Digest: JU22z4CicWmnYRbBMM7PqH7ptbg=
+
+Name: assets/Win_Package/ToLua/tolua.lua
+SHA1-Digest: WgIZ4Jm9NvR3K98OrP3b8PImK+8=
+
+Name: assets/Win_Package/panel/preloadbundlespanel.pak.manifest
+SHA1-Digest: T+lQcYxUZxYxnm057BRrQ5RCiPo=
+
+Name: assets/Android_Package/Lua/3rd/cjson/json2lua.lua
+SHA1-Digest: HTCIPFlUqn54ZSfdJF4m1PtJhUU=
+
+Name: assets/Win_Package/Lua/3rd/pbc/parser.lua
+SHA1-Digest: dramZBSgDFpWuTlTc7MIeKWW3zI=
+
+Name: assets/Android_Package/ToLua/System/Reflection/BindingFlags.lua
+SHA1-Digest: W2NkszwtvXmjgvSepnE91b+Jhqk=
+
+Name: assets/Android_Package/panel/loginpanel.pak
+SHA1-Digest: xXmH/d1CYmSR32z2QF3jWX6cST0=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/msvctest.bat
+SHA1-Digest: I+MTrl64rHgqZC/qnZENFnM0XEo=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/bittest.lua
+SHA1-Digest: 2xbyheCOMM1U+/peF+DuG1uMUXc=
+
+Name: assets/bin/Data/a51402dadcd5eb94cb5bc4dfa6af974c
+SHA1-Digest: Ty9gqICOg2RU5M2W97agXhfxxpc=
+
+Name: assets/Android_Package/ToLua/misc/functions.lua
+SHA1-Digest: np4AZRv1tCG21XsiDJXyjbzEexM=
+
+Name: assets/Win_Package/ToLua/UnityEngine/Bounds.lua
+SHA1-Digest: 1qATe11tK/4JRP2OfwOUu4WcP5U=
+
+Name: assets/Android_Package/ToLua/socket/smtp.lua
+SHA1-Digest: Vk5zWZy1/TNHxQZqY7/7JILq8eA=
+
+Name: lib/x86/libunity.so
+SHA1-Digest: fVtZDTifB6xOoPX69hrX7D4fsfw=
+
+Name: assets/Android_Package/ToLua/lpeg/re.lua
+SHA1-Digest: cPoSxEmBAB3/0FGyOOx+ceuS3P8=
+
+Name: lib/armeabi-v7a/libmono.so
+SHA1-Digest: fnzlpO8gxZYQT5xDqfeVENFLpfQ=
+
+Name: assets/Win_Package/ToLua/socket/url.lua
+SHA1-Digest: ck5WyjkUdINyj/bbI7QlPpP70Js=
+
+Name: assets/bin/Data/level0
+SHA1-Digest: HAJrx7NPw9uZirNIWUtHzh0FZmc=
+
+Name: assets/Android_Package/Lua/NetDefine.lua
+SHA1-Digest: DCHXtIabhql9wjZuuKr6HaeQRr8=
+
+Name: assets/Android_Package/ToLua/protobuf/containers.lua
+SHA1-Digest: /10DDtnFnhaFfJIeL5hpoJ9gHHw=
+
+Name: assets/Win_Package/ToLua/socket.lua
+SHA1-Digest: NmMd+nbAPBbdq8k2ovNA4MGCZH0=
+
+Name: res/drawable-xhdpi-v4/app_banner.png
+SHA1-Digest: GmAqfy00mkN6GabsZhcK6EHDtzI=
+
+Name: assets/bin/Data/Managed/Mono.Security.dll
+SHA1-Digest: DN4PiyX+H+VJq3Cpu14HliTD3f4=
+
+Name: lib/armeabi-v7a/libtolua.so
+SHA1-Digest: 2fYBS54lfi4ZWGRjgqUzc8bWxu0=
+
+Name: assets/Win_Package/ToLua/UnityEngine/RaycastHit.lua
+SHA1-Digest: VuifLLMTHm4CVchbIOtpxjL9VFk=
+
+Name: assets/bin/Data/159fe406a43da2343a3ac117695a1534
+SHA1-Digest: K/shCo2ocVjBb4Q9DnzR4B4mPz0=
+
+Name: assets/Win_Package/ToLua/misc/strict.lua
+SHA1-Digest: c2Qek664Z+zHkl9I/gnzeO+x8Yw=
+
+Name: assets/Android_Package/panel/loginpanel.pak.manifest
+SHA1-Digest: StVA/drvUGfq+xB8YUb5odv1pnk=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/doc/bluequad-print.css
+SHA1-Digest: 4ikECCwy6+rXeZpHa921NOPVoRk=
+
+Name: assets/bin/Data/3e90f8f033d17114297577d8cde2677e
+SHA1-Digest: Xebwcsf2qRxwc7mObZCYWXFHfqk=
+
+Name: assets/Win_Package/ToLua/misc/functions.lua
+SHA1-Digest: i/yl7Zzu4KMKvtbE0JHQYnV8fms=
+
+Name: assets/Win_Package/ToLua/UnityEngine/Plane.lua
+SHA1-Digest: dLyb4HSa/iAVFaFh/iNtrWAAzbk=
+
+Name: assets/Win_Package/ToLua/UnityEngine/Color.lua
+SHA1-Digest: nhc2JKinsRHiYNcSK4b62cCnRp4=
+
+Name: assets/Win_Package/ToLua/protobuf/decoder.lua
+SHA1-Digest: QcG+4BoHmF1GTGFue2Bb8kiH7n0=
+
+Name: assets/Android_Package/Lua/Main.lua
+SHA1-Digest: ieTwNLtyKDdU6xl8/2TAdG3Vujk=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/doc/api.html
+SHA1-Digest: H0mHiO4GjK6bLX+e+IJGffYuZpo=
+
+Name: assets/Android_Package/Lua/Common/protocal.lua
+SHA1-Digest: LecG1xM5TmFOnXUeHGgBAiBd/SQ=
+
+Name: assets/Android_Package/ToLua/UnityEngine/Vector4.lua
+SHA1-Digest: 2nZARTR1rqjV2z0PP4SIOfNEbJg=
+
+Name: assets/Win_Package/ToLua/socket/http.lua
+SHA1-Digest: E5KONgHgP62tuXpygtCB4J/l8Dk=
+
+Name: assets/bin/Data/a540e20118516b1449b2bb6293d1030a
+SHA1-Digest: ahlPEasI9x2OAbsLVdpNUTCR0Mk=
+
+Name: assets/bin/Data/Managed/DOTween.dll
+SHA1-Digest: sc42/zG998bBKyOsuhVIlq+abiw=
+
+Name: assets/Win_Package/Lua/3rd/sproto/print_r.lua
+SHA1-Digest: yjjJCVgcDIv0f/rlR0s9/fc0NXI=
+
+Name: assets/Android_Package/ToLua/System/coroutine.lua
+SHA1-Digest: xcjYHnCpyzLS7w9fgRyz89QyrGw=
+
+Name: assets/Win_Package/Lua/3rd/cjson/example5.json
+SHA1-Digest: +nxIsHX9s7oAIMLzTaYwlMpFGh4=
+
+Name: assets/Win_Package/Lua/NetDefine.lua
+SHA1-Digest: TWe35tKYmGX39PHMldUTiHS/H/0=
+
+Name: assets/Win_Package/Lua/Network.lua
+SHA1-Digest: vUGbSsyh9NhCzi5nx2J7Hvz3pz4=
+
+Name: assets/Android_Package/Lua/3rd/cjson/test.lua
+SHA1-Digest: ynQzLL4ERtlVNGz8bnviQiY2D00=
+
+Name: assets/Android_Package/panel/mainpanel.pak.manifest
+SHA1-Digest: NAHkIXNTCNCzr2z93Fl8bl+JCFc=
+
+Name: assets/bin/Data/07657567fb0a4fe439b7e52f48d787e1
+SHA1-Digest: 0mCmiXUkn51uMPoRZjkQfIKziWI=
+
+Name: assets/Android_Package/Lua/3rd/sproto/test.lua
+SHA1-Digest: sPgGSm4STSwET9jvUUmM053bHlM=
+
+Name: assets/Android_Package/Lua/3rd/sproto/testrpc.lua
+SHA1-Digest: z8ccOs+oA0d69VLUowL2GsCDvZ4=
+
+Name: assets/Win_Package/ToLua/protobuf/descriptor.lua
+SHA1-Digest: JCf85NFbjNezuENaX2Z1USixFd4=
+
+Name: assets/bin/Data/Managed/DOTween46.dll
+SHA1-Digest: zQrbdGDQWw9zwTRN9rkip0Ut+UI=
+
+Name: assets/Win_Package/ToLua/protobuf/containers.lua
+SHA1-Digest: +gBYZKBY8n/51lq6HPct5pIR5ow=
+
+Name: assets/bin/Data/Managed/DOTween50.dll
+SHA1-Digest: a/bb8OKQ3yNTwPobrFfhd/3lpbc=
+
+Name: assets/Win_Package/ToLua/list.lua
+SHA1-Digest: 1CThHkOfH/cRbMETCp51zVIOnFc=
+
+Name: assets/Win_Package/panel/tips.pak
+SHA1-Digest: LYwdX9Hf4h5vV0d6FjMyo+iVjg0=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/nsievebits.lua
+SHA1-Digest: CFLpebbvHuXmqQYQpv0Ho0WpzKY=
+
+Name: assets/Android_Package/ToLua/UnityEngine/Bounds.lua
+SHA1-Digest: A0ZW8wNZXl9zqF23UrP0gUGNiT4=
+
+Name: assets/Win_Package/Lua/Define.lua
+SHA1-Digest: XRdL0FDzjdpCpQ364s6Mv5WyqSs=
+
+Name: assets/Win_Package/Lua/Manager/CtrlMgr.lua
+SHA1-Digest: IwL0Eeb/xJXwRG0EHFw+TCHaIUk=
+
+Name: assets/bin/Data/unity default resources
+SHA1-Digest: QvqeVmeJXC2Wjf6gCO3RyvQnIEY=
+
+Name: assets/bin/Data/1cf225c4857be394195b3fe1f6bd8447
+SHA1-Digest: 16kOwH20p0UBk3Mic+zp32b34mM=
+
+Name: assets/Win_Package/ToLua/UnityEngine/Quaternion.lua
+SHA1-Digest: DTH8ZwpOCfL69Aq92UTRBExBFaw=
+
+Name: assets/Win_Package/panel/loginpanel.pak
+SHA1-Digest: XkuvagGyeVgE2H6DJweETBW9+Mk=
+
+Name: assets/bin/Data/Managed/DOTweenPro.dll
+SHA1-Digest: slIWc86pGsIlCSl3i7ggC5wc7qU=
+
+Name: assets/Android_Package/ToLua/protobuf/text_format.lua
+SHA1-Digest: mWtnjgxZaWeSjdotfLqMO5ldmhc=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/doc/img/contact.png
+SHA1-Digest: qXED7O3sELuFSNVni3pcdb51JNA=
+
+Name: assets/Android_Package/panel/preloadbundlespanel.pak.manifest
+SHA1-Digest: xXg4c7/TjRE+Cs5g6q8ZB1nluTE=
+
+Name: assets/Android_Package/ToLua/UnityEngine/Quaternion.lua
+SHA1-Digest: wXHrL6h+o+PWsBFvTB7wF0tMm7M=
+
+Name: assets/Win_Package/Lua/3rd/cjson/json2lua.lua
+SHA1-Digest: WqNTwyqJX6aBB5pi13CwhDJYMm0=
+
+Name: assets/Win_Package/ToLua/event.lua
+SHA1-Digest: c88GAUuSiyuSgQGTY/ap5kCUmVY=
+
+Name: assets/Win_Package/ToLua/typeof.lua
+SHA1-Digest: DvjoVzTQrQzKBDY5o8XWK7vcf+0=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/README
+SHA1-Digest: 5cXfFglUtR2dW+2K2lQzZTG6xkY=
+
+Name: assets/Win_Package/ToLua/protobuf/type_checkers.lua
+SHA1-Digest: 1Yts+qt5mnMvThpCvYc0TSLap1E=
+
+Name: assets/Win_Package/ToLua/slot.lua
+SHA1-Digest: oZDc66/D2x+nu55DioR/kE/Awss=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/doc/contact.html
+SHA1-Digest: 21FiI3plXZ84lI2vOKEg99CG0XI=
+
+Name: assets/bin/Data/Resources/unity_builtin_extra
+SHA1-Digest: hN6Y4tGAzFPkVrvVWgyUgTwrCTs=
+
+Name: assets/Android_Package/ToLua/protobuf/listener.lua
+SHA1-Digest: mfoPCFtSQuyD4IhPNc9TQObNzoY=
+
+Name: assets/Android_Package/ToLua/protobuf/type_checkers.lua
+SHA1-Digest: j32zDPXGDENy2JUw32ir9zILM0g=
+
+Name: assets/Win_Package/panel/preloadbundlespanel.pak
+SHA1-Digest: LKjqr+1rA4+VDMEZD+HDdranQgM=
+
+Name: assets/Win_Package/Lua/3rd/sproto/testall.lua
+SHA1-Digest: L8cFhNPqTgP7kGuJIK+WvtOY61g=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/doc/changes.html
+SHA1-Digest: 2WA5Ez6irLXUZwSozMAra9HQjWc=
+
+Name: assets/Android_Package/Lua/3rd/pbc/addressbook.proto
+SHA1-Digest: hzcgVwtNx+SKPhS0vBII4s2rGMc=
+
+Name: assets/Android_Package/ToLua/UnityEngine/Time.lua
+SHA1-Digest: fhvJDfrB+RvfjY4rrwj9Wt0Pydo=
+
+Name: assets/Android_Package/Lua/3rd/cjson/lua2json.lua
+SHA1-Digest: wUuueFJrON5RzTJuoDch/GxRhQw=
+
+Name: assets/Win_Package/filelist.txt
+SHA1-Digest: x6bHOgICMKer1QktzxobBx8j8fk=
+
+Name: assets/bin/Data/Managed/Debugger.dll
+SHA1-Digest: lOAp7p+r0zOlvHEP5ALrWhoWqjo=
+
+Name: assets/Android_Package/ToLua/typeof.lua
+SHA1-Digest: Sm50KpsscXGZ1q9MP9eG7zT4Ovo=
+
+Name: assets/bin/Data/Managed/DemiLib.dll
+SHA1-Digest: EKCnZ7Xg26SfLZsEVRMphGUaSj4=
+
+Name: assets/Android_Package/ToLua/socket/tp.lua
+SHA1-Digest: T/VcmhX635eFYdOGG3ighy7bwOE=
+
+Name: assets/Android_Package/filelist.txt
+SHA1-Digest: RLmFfcw/cIKiDyRWJncYK//GTjw=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/doc/bluequad.css
+SHA1-Digest: kra1EvNdaOoqrRgBTDEHXysmJRc=
+
+Name: assets/Android_Package/Lua/Common/functions.lua
+SHA1-Digest: bQUPcXLKNBT+1WYv3ywhvrYMWtw=
+
+Name: assets/Win_Package/ToLua/UnityEngine/Mathf.lua
+SHA1-Digest: 1gOhl1Ft1n+yrz4mT88FfO3vonY=
+
+Name: assets/Win_Package/Lua/3rd/cjson/example3.json
+SHA1-Digest: GhdJIqiMTO8w8pEY8Bov4jfwDjY=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/doc/index.html
+SHA1-Digest: E7933qviKyuG4rmqYKIYnC7RDCY=
+
+Name: assets/Android_Package/Lua/3rd/pbc/test2.lua
+SHA1-Digest: G7hHDGgvgRoNjpgXB3ElXxeyoiM=
+
+Name: assets/Android_Package/panel/tips.pak.manifest
+SHA1-Digest: 1LrDB5D0JgkmA90p7kf7Wbiak4o=
+
+Name: assets/Win_Package/ToLua/System/Reflection/BindingFlags.lua
+SHA1-Digest: 2/0rU2UXeam20QoF+JBu4Qn/9+k=
+
+Name: assets/Android_Package/Lua/Network.lua
+SHA1-Digest: QDxBdQ5/lSXGwBCjxXH6oSsk89o=
+
+Name: assets/Win_Package/Lua/3rd/pblua/login_pb.lua
+SHA1-Digest: sTpwexHjey/pLH2eypkGgEyycQM=
+
+Name: assets/Win_Package/ToLua/protobuf/text_format.lua
+SHA1-Digest: ZpZtHlY47glkVO+YgV/2TxDypZM=
+
+Name: assets/Win_Package/Lua/3rd/pbc/testparser.lua
+SHA1-Digest: fyLMmBCZJIiAdcFVVNKZ7vrV7DQ=
+
+Name: assets/Win_Package/Lua/3rd/pbc/addressbook.proto
+SHA1-Digest: +eL70O081yarS4EWPRB2z7NyCGQ=
+
+Name: assets/bin/Data/Managed/System.dll
+SHA1-Digest: xg1gSaxBVFyzBIU1gAuqhMzHLmc=
+
+Name: assets/Win_Package/Lua/Common/functions.lua
+SHA1-Digest: 7Gaw8RfuzIyDl8/IgxHezi7YdqQ=
+
+Name: lib/x86/libmono.so
+SHA1-Digest: y6c1julOvHaD128XXd3oqbF8Q3g=
+
+Name: assets/bin/Data/7f8a3f0f7fa194f4485c6ce2365383fe
+SHA1-Digest: BJXdFOF4hJYg2Jist9fAHTzEThI=
+
+Name: assets/Android_Package/Lua/3rd/pbc/protobuf.lua
+SHA1-Digest: Bx4ZNnxcp/6qRHBNIbR0c0BaQEg=
+
+Name: assets/Win_Package/Lua/3rd/pbc/test2.lua
+SHA1-Digest: gdSzv56rx/4FiVMM722df1FVjoA=
+
+Name: assets/Win_Package/Lua/View/MainPanel.lua
+SHA1-Digest: NmEmOmYkrqBgpiENYNji959K6P0=
+
+Name: assets/bin/Data/sharedassets0.assets
+SHA1-Digest: 7i0aNP51nuhyNmkHQBpKgvOTAZg=
+
+Name: assets/Android_Package/Lua/3rd/pbc/addressbook.pb
+SHA1-Digest: xzVpL720/dXw3hWv1NqWsdtK1N4=
+
+Name: assets/Android_Package/ToLua/System/ValueType.lua
+SHA1-Digest: cmrJ1LbjUiUZdx2e3zvXizgKJYo=
+
+Name: assets/Android_Package/ToLua/misc/utf8.lua
+SHA1-Digest: 9rldrHlQn0+3umwXvhhsJ8nwxxk=
+
+Name: assets/Android_Package/Lua/events.lua
+SHA1-Digest: EncL8yszVv+JUmnLdDcgfh+Vu2M=
+
+Name: assets/Android_Package/Lua/3rd/cjson/util.lua
+SHA1-Digest: 9WWV5CB73HXen8BpMBAL1wfxQS4=
+
+Name: assets/Win_Package/ToLua/UnityEngine/Ray.lua
+SHA1-Digest: z1gF0YRJJYNLK/JHMRsf0sHD9sk=
+
+Name: assets/Android_Package/Lua/Manager/ViewMgr.lua
+SHA1-Digest: BdG1pTpUHSB67hHuerEvR0Zop/k=
+
+Name: assets/Android_Package/ToLua/mime.lua
+SHA1-Digest: tUINJSt0AKYFZcRK5KTzobrlqdg=
+
+Name: assets/Android_Package/ToLua/System/Timer.lua
+SHA1-Digest: chiIOU7i5llZBCpkhffGZbF/q9w=
+
+Name: assets/Win_Package/ToLua/UnityEngine/Vector4.lua
+SHA1-Digest: ZzC5sTEbXIG0EgbI0hAnzBgIC+E=
+
+Name: assets/Win_Package/Lua/Model/PlayerModel.lua
+SHA1-Digest: xtXAveci4xLODGAR3R/FQhQkak8=
+
+Name: assets/bin/Data/Managed/UnityEngine.Networking.dll
+SHA1-Digest: Fr9gCNOMfpfg5lfupsiFz6Fjnm8=
+
+Name: lib/x86/libtolua.so
+SHA1-Digest: oExwi/4WvAizYZpJeXQhF/9mf3U=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/doc/install.html
+SHA1-Digest: 7Laix2kZaCOf68oAHgHjDqjuW0E=
+
+Name: assets/Win_Package/Lua/View/PreloadBundlesPanel.lua
+SHA1-Digest: vuAyV1sN/q5uw6dWx5Yv6GR1dio=
+
+Name: assets/Win_Package/ToLua/socket/tp.lua
+SHA1-Digest: gahE5yuCeS4jVXwW2W+ej4o4g4k=
+
+Name: assets/Android_Package/ToLua/protobuf/encoder.lua
+SHA1-Digest: knmrcgteaUyCbtfnGb3TzwKC69I=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/nsievebits.lua
+SHA1-Digest: MI1JdCh1fzwix3EO5imYC8kaM/8=
+
+Name: assets/Win_Package/ToLua/misc/utf8.lua
+SHA1-Digest: swrLO/tHiq6fa25tORbWt6+1Mx8=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/doc/changes.html
+SHA1-Digest: +f2lMkwE2axu1PFPh4iPbmDHkzg=
+
+Name: assets/Android_Package/Lua/Model/PlayerModel.lua
+SHA1-Digest: QmLRBuCb+6UpYkREYgxE8JP0uBs=
+
+Name: assets/Win_Package/ToLua/UnityEngine/Time.lua
+SHA1-Digest: rVu4SfRNC1rKpnbsbwmEIAX7FXI=
+
+Name: res/drawable-mdpi-v4/app_icon.png
+SHA1-Digest: HhO14ew8jXhvF+epB9JARufI/D4=
+
+Name: assets/Android_Package/Lua/View/LoginPanel.lua
+SHA1-Digest: HUBcW2ppvPrcZ7dY3md1e97Up7g=
+
+Name: assets/Win_Package/Lua/3rd/sproto/sproto.lua
+SHA1-Digest: AeyRRiqHDypK2i4YoWgeVRnWESI=
+
+Name: assets/bin/Data/61ac64b3331a68e47bc0da8ae4fc4cb3
+SHA1-Digest: zEo4fS58MNcA3sTctqp51ez4wdU=
+
+Name: assets/Android_Package/ToLua/socket/ftp.lua
+SHA1-Digest: zQ8WuG9IYGgFQ8t+6isa/NLKQGA=
+
+Name: assets/Android_Package/Lua/Control/LoginCtrl.lua
+SHA1-Digest: 6dgtbPwe3Uw75Tob4yaTfKrTzng=
+
+Name: assets/Android_Package/ToLua/ltn12.lua
+SHA1-Digest: jIzpqMnYsC8MpE591JbKP2QXThc=
+
+Name: assets/Win_Package/Lua/3rd/pblua/person_pb.lua
+SHA1-Digest: lB7ZgJkGq4FHeByYfiuvnOucjsc=
+
+Name: assets/Win_Package/ToLua/protobuf/listener.lua
+SHA1-Digest: IOgA9cGZaUH6KROt0N6jXOH97T0=
+
+Name: assets/bin/Data/Managed/LitJson.dll
+SHA1-Digest: lgDOqkgHzDg8mdPNYQZejtra4yo=
+
+Name: assets/Android_Package/Lua/3rd/cjson/example4.json
+SHA1-Digest: BeYRQGxPm+R+0qd/8gZhKZrmTNA=
+
+Name: assets/Android_Package/ToLua/socket/mbox.lua
+SHA1-Digest: kK3vaI/j0mnx/qXzcOPQFXrta3k=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/msvcbuild.bat
+SHA1-Digest: iRA9sfhecWB+UHzF1Bjxvgd1Lqc=
+
+Name: assets/Win_Package/ToLua/socket/smtp.lua
+SHA1-Digest: YOgcrexSCyg8BFrP0Om/XM63JtQ=
+
+Name: assets/bin/Data/Managed/mscorlib.dll
+SHA1-Digest: vPoGCnNBpiadvHnZEJBVZj++7xc=
+
+Name: assets/Win_Package/ToLua/protobuf/encoder.lua
+SHA1-Digest: tI7PMGyFpxwPSoTxDVXUe5Qvqy4=
+
+Name: assets/Win_Package/Lua/Manager/ViewMgr.lua
+SHA1-Digest: dbw6lxEi13SGTM23/OeGEREv7mQ=
+
+Name: assets/Win_Package/ToLua/System/ValueType.lua
+SHA1-Digest: NMAXVi0B30lBLDE3Lbk1M9lGjAQ=
+
+Name: assets/Win_Package/ToLua/UnityEngine/LayerMask.lua
+SHA1-Digest: cKwnbn5hFhUYJ+xGRSzl+fV+38Y=
+
+Name: assets/Android_Package/Lua/3rd/cjson/example5.json
+SHA1-Digest: Ch8PqbhUIY96NMc99LTYx/tCaKI=
+
+Name: assets/Android_Package/ToLua/tolua.lua
+SHA1-Digest: kksJ0lnhSGYEps5LSAG+Lhv4u1Y=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/msvctest.bat
+SHA1-Digest: BDyrMyTdgDrRhmLz/CRNLFovUS4=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/bittest.lua
+SHA1-Digest: X0MxP9qK+kRzSmCOR9rqxzOm2Ts=
+
+Name: assets/Android_Package/Android_Package
+SHA1-Digest: OG0pJJdumr7ch4xSoqRIs6XK+VM=
+
+Name: assets/Android_Package/ToLua/socket/http.lua
+SHA1-Digest: FDpD0owhY/El50wiKFln61tJvK4=
+
+Name: assets/Win_Package/Lua/3rd/cjson/example2.json
+SHA1-Digest: oWTvZUK+r/Bpj0rQepQYfntBtPA=
+
+Name: lib/armeabi-v7a/libunity.so
+SHA1-Digest: b3veaemvwCiV0W9DK1sVTXhmHPQ=
+
+Name: assets/Android_Package/ToLua/UnityEngine/Ray.lua
+SHA1-Digest: hTfzOtQvXLWtFSvZvClLSfXUFx4=
+
+Name: assets/Android_Package/Lua/3rd/pblua/login.proto
+SHA1-Digest: 0aOFnLfrL8mP7j2T1U3U/wacU3w=
+
+Name: assets/Android_Package/Lua/3rd/sproto/sprotoparser.lua
+SHA1-Digest: PdxdDEpEdwLgLTg/85KefytjHn4=
+
+Name: assets/Android_Package/ToLua/UnityEngine/Plane.lua
+SHA1-Digest: xXZjPN6ZVLumKjk465RKAKg6dmw=
+
+Name: assets/bin/Data/globalgamemanagers
+SHA1-Digest: 26EMLIVQRnU3jt7cGl1Xxdrpu8I=
+
+Name: assets/bin/Data/0000000000000000f000000000000000
+SHA1-Digest: ZSxetpCF0iJgTfsFlpbhAORuZl4=
+
+Name: assets/Android_Package/Lua/3rd/pbc/test.lua
+SHA1-Digest: NSoUCT19Nu3OVxakVAD80H4XoVg=
+
+Name: assets/Win_Package/Lua/3rd/cjson/example1.json
+SHA1-Digest: H/vu5OLf7saroxl8U1MBRhpxncw=
+
+Name: assets/Android_Package/ToLua/UnityEngine/Color.lua
+SHA1-Digest: K5lhIzhA4bZJB9Q4r5QEvj/d62U=
+
+Name: assets/Android_Package/Android_Package.manifest
+SHA1-Digest: 8kwevk+vCULOvwDmKrKmkPID4Ss=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/md5test.lua
+SHA1-Digest: AMicCk+yERLtQdnb41X//Hi+mtw=
+
+Name: assets/Win_Package/Lua/Control/PreloadBundlesCtrl.lua
+SHA1-Digest: xgBMmtKYOZXoWtErtPgGn5cahtU=
+
+Name: assets/Android_Package/ToLua/socket/headers.lua
+SHA1-Digest: X//rlyjz5UHFFfCkIggxEmWTuoA=
+
+Name: assets/Android_Package/Lua/3rd/sproto/print_r.lua
+SHA1-Digest: TM5/tm0+3TI/dFaSpTt7ZjiYJns=
+
+Name: assets/Win_Package/Lua/3rd/cjson/util.lua
+SHA1-Digest: fjjgp4jl1YONvS9h53oggsHhwoI=
+
+Name: assets/Win_Package/Lua/3rd/luabitop/doc/bluequad.css
+SHA1-Digest: 3f4k1T3IzIX837cakvpwNkjxhPQ=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/msvcbuild.bat
+SHA1-Digest: lcXt/mkex026VtmY7jDTr5vAhls=
+
+Name: assets/Win_Package/Lua/3rd/pblua/login.proto
+SHA1-Digest: 8LYU82lgWOs2bPXm5+sh+3NzIhQ=
+
+Name: assets/Android_Package/ToLua/socket.lua
+SHA1-Digest: tizH4QCiEBdtB55DNlh4E78z2os=
+
+Name: assets/Win_Package/ToLua/cjson/util.lua
+SHA1-Digest: 07y+WIwyGpuLyPT1ioG3jUkZLyg=
+
+Name: assets/bin/Data/Managed/Assembly-CSharp.dll
+SHA1-Digest: I6HndyxGOyvVEcOG0KM0uPQldHs=
+
+Name: classes.dex
+SHA1-Digest: 8Lws+QDsHqZbTJ7WkFL9rM4SgzI=
+
+Name: assets/Android_Package/Lua/3rd/luabitop/bitbench.lua
+SHA1-Digest: yVxf36k4aBZA+9vtlkTjeXv0xMU=
+
+Name: assets/Android_Package/Lua/View/PreloadBundlesPanel.lua
+SHA1-Digest: 8Si7GQfG/0ijTydDbkOpHsue4Fo=
+
+Name: assets/Android_Package/ToLua/UnityEngine/Vector3.lua
+SHA1-Digest: a9q0SMkF9TquOe7/e05voxrnT3s=
+

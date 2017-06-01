@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2674542361
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: panel/loginpanel.pak
+      Dependencies: {}
+    Info_1:
+      Name: panel/mainpanel.pak
+      Dependencies: {}
+    Info_2:
+      Name: panel/preloadbundlespanel.pak
+      Dependencies: {}
+    Info_3:
+      Name: panel/tips.pak
+      Dependencies: {}

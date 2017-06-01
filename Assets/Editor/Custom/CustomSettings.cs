@@ -60,6 +60,7 @@ public static class CustomSettings
         _GT(typeof(EventTriggerListener)),
         _GT(typeof(DOTweenDelegate)),
         _GT(typeof(UIUtil)),
+        _GT(typeof(SdkAdapter)),
 
 
               
