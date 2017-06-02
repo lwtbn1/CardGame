@@ -21,7 +21,11 @@ function LoginCtrl.SdkLogin()
     local isOn = this.panel.ui.confirmToggle.isOn;
     if isOn then
         --net...这里向服务器发起登录请求,回调后，进入游戏界面
-        SdkAdapter.Authorize_Wei_Xin(LoginCtrl.SdkLoginCb);
+        --if Application.isMobilePlatform then
+            --SdkAdapter.Authorize_Wei_Xin(LoginCtrl.SdkLoginCb);
+        --else
+            LoginCtrl.SdkLoginCb(200);
+        --end
         
     else
         uiMgr:ShowTextTips("未选中同意协议");
@@ -32,7 +36,7 @@ end
 function LoginCtrl.SdkLoginCb(code)
     if code == 200 then
         CtrlMgr.GetCtrl(CtrlNames.Main).PushPanel();
-    else
+    end
 end
 --启动事件--
 function LoginCtrl.OnCreate(obj)

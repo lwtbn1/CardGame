@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
         public LuaTable luaRef;
     }
     UIPanel curOpenPanel;
+    UIPanel beforePanel;
     Dictionary<string, GameObject> panelCache = new Dictionary<string, GameObject>();
     Dictionary<string, GameObject> popupsCache = new Dictionary<string, GameObject>();
     /// <summary>
@@ -42,8 +43,7 @@ public class UIManager : MonoBehaviour
             if (willShowPanel != null)
                 willShowPanel.SetActive(true);
             LuaFunction func = table.GetLuaFunction("Enable");
-            if (func != null)
-                func.Call(willShowPanel);
+            LuaHelper.Call(func, new object[] { willShowPanel }, true);
         }
         else
         {
@@ -57,28 +57,31 @@ public class UIManager : MonoBehaviour
                 panel.name = panelName;
                 panel.AddComponent<LuaBehaviour>();
                 LuaFunction func = table.GetLuaFunction("OnCreate");
-                if (func != null)
-                    func.Call(panel);
+                LuaHelper.Call(func, new object[] { panel},true);
             });
         }
+        HidePanel();
+        beforePanel = curOpenPanel;
     }
 
     public void HidePanel()
     {
-        if (curOpenPanel == null)
-            return;
-        GameObject curPanel = null;
-        panelCache.TryGetValue(curOpenPanel.name, out curPanel);
-        LuaFunction func = curOpenPanel.luaRef.GetLuaFunction("OnDisable");
-        if (func != null)
+        StartCoroutine(HidePanelYed());
+    }
+    IEnumerator HidePanelYed()
+    {
+        yield return new WaitForEndOfFrame();
+        if (beforePanel == null)
+            yield break;
+        GameObject panel = null;
+        if (panelCache.TryGetValue(beforePanel.name, out panel))
         {
-            func.Call();
-            func.Dispose();
-            func = null;
+            LuaFunction func = beforePanel.luaRef.GetLuaFunction("OnDisable");
+            LuaHelper.Call(func, null, true);
+
+            if (panel != null)
+                panel.SetActive(false);
         }
-            
-        if (curPanel != null)
-            curPanel.SetActive(false);
     }
 
     public void PushPopups(string popupsName)

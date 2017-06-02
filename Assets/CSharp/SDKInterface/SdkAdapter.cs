@@ -36,31 +36,4 @@ public class SdkAdapter {
 
     }
 
-    Social.AuthDelegate authcallback =
-            delegate(Platform platform, int stCode, Dictionary<string, string> message)
-            {
-                if (stCode == Social.SUCCESS)
-                {
-                    Debug.Log("xxxxxx message=" + message.Count);
-                    str = "success";
-                    foreach (KeyValuePair<string, string> kv in message)
-                    {
-                        string n = kv.Key;
-                        string s = kv.Value;
-                        str = str + "   " + n + ":" + s;
-                    }
-
-
-                }
-                else
-                {
-                    str = "fail=";
-                    foreach (KeyValuePair<string, string> kv in message)
-                    {
-                        string n = kv.Key;
-                        string s = kv.Value;
-                        str = str + "   " + n + ":" + s;
-                    }
-                };
-            };
 }

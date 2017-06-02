@@ -1,0 +1,1 @@
+查看keystore信息：keytool -list -v -keystore C:\Users\Desktop\browser\debug.keystore -storepass [密码]
