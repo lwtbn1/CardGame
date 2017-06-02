@@ -7,9 +7,9 @@ ViewMgr = {};
 local this = ViewMgr;
 
 function ViewMgr.Init()
-    require ("View/" .. tostring(PanelNames.Main));
-    require ("View/" .. tostring(PanelNames.Login));
-    require ("View/" .. tostring(PanelNames.PreloadBundles));
+    require ("Panels/View/" .. tostring(PanelNames.Main));
+    require ("Panels/View/" .. tostring(PanelNames.Login));
+    require ("Panels/View/" .. tostring(PanelNames.PreloadBundles));
 end
 
 --endregion

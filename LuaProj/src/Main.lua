@@ -3,7 +3,7 @@ require "Common/Util"
 require "Manager/CtrlMgr"
 require "Manager/ViewMgr"
 
-function Main()
+function GameStart()
     CtrlMgr.Init();
     ViewMgr.Init();
 

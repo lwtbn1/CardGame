@@ -84,7 +84,12 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void PushPopups(string popupsName)
+    public void PushPopups(string popupsName, LuaTable table)
+    {
+
+    }
+
+    public void AddWidget(string widgetName, LuaTable table)
     {
 
     }
@@ -104,6 +109,8 @@ public class UIManager : MonoBehaviour
         });
 
     }
+
+    
 
 }
 

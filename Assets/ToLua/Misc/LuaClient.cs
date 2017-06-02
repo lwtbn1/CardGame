@@ -133,19 +133,19 @@ public class LuaClient : MonoBehaviour
         luaState.LuaSetField(-2, "cjson.safe");                               
     }
 
-    protected virtual void CallMain()
+    protected virtual void GameStart()
     {
-        LuaFunction main = luaState.GetFunction("Main");
-        main.Call();
-        main.Dispose();
-        main = null;                
+        LuaFunction func = luaState.GetFunction("GameStart");
+        func.Call();
+        func.Dispose();
+        func = null;                
     }
 
     protected virtual void StartMain()
     {
         luaState.DoFile("Main.lua");
         levelLoaded = luaState.GetFunction("OnLevelWasLoaded");
-        CallMain();
+        GameStart();
     }
 
     protected void StartLooper()

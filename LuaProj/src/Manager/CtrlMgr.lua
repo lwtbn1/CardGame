@@ -1,9 +1,9 @@
 --region *.lua
 --Date
 --此文件由[BabeLua]插件自动生成
-require "Control/MainCtrl"
-require "Control/LoginCtrl"
-require "Control/PreloadBundlesCtrl"
+require "Panels/Control/MainCtrl"
+require "Panels/Control/LoginCtrl"
+require "Panels/Control/PreloadBundlesCtrl"
 CtrlMgr = {};
 local this = CtrlMgr;
 local ctrlList = {};

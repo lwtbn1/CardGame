@@ -53,6 +53,8 @@ uiMgr =  LuaHelper.GetUIManager()
 sceneMgr = UnityEngine.SceneManagement.SceneManager
 networkMgr = LuaHelper.GetNetworkManager()
 
+
+
 CtrlNames = {
 	Main = "MainCtrl",
     Login = "LoginCtrl",
@@ -63,4 +65,8 @@ PanelNames = {
 	Main = "MainPanel",	
     Login = "LoginPanel",
     PreloadBundles = "PreloadBundlesPanel";
+}
+
+PopupsNames = {
+
 }

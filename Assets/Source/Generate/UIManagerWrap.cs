@@ -10,6 +10,7 @@ public class UIManagerWrap
 		L.RegFunction("PushPanel", PushPanel);
 		L.RegFunction("HidePanel", HidePanel);
 		L.RegFunction("PushPopups", PushPopups);
+		L.RegFunction("AddWidget", AddWidget);
 		L.RegFunction("ShowTextTips", ShowTextTips);
 		L.RegFunction("__eq", op_Equality);
 		L.RegFunction("__tostring", ToLua.op_ToString);
@@ -56,10 +57,29 @@ public class UIManagerWrap
 	{
 		try
 		{
-			ToLua.CheckArgsCount(L, 2);
+			ToLua.CheckArgsCount(L, 3);
 			UIManager obj = (UIManager)ToLua.CheckObject(L, 1, typeof(UIManager));
 			string arg0 = ToLua.CheckString(L, 2);
-			obj.PushPopups(arg0);
+			LuaTable arg1 = ToLua.CheckLuaTable(L, 3);
+			obj.PushPopups(arg0, arg1);
+			return 0;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int AddWidget(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 3);
+			UIManager obj = (UIManager)ToLua.CheckObject(L, 1, typeof(UIManager));
+			string arg0 = ToLua.CheckString(L, 2);
+			LuaTable arg1 = ToLua.CheckLuaTable(L, 3);
+			obj.AddWidget(arg0, arg1);
 			return 0;
 		}
 		catch(Exception e)
